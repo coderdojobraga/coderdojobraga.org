@@ -10,14 +10,13 @@ p {
     position:absolute;
     left:50%;
     top:50%;
-    margin: -75px 0 0 -250px;
-    width:500px;
+    margin: -90px 0 0 -205px;
+    width:410px;
     overflow:hidden;
-    font-weight: bold;
-    font-size: 75px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 90px;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #FAFAFA;
-    border-right: .1em solid white;
+    border-right: .02em solid white;
     -webkit-animation: type 1.3s steps(30, end),
                         blink-caret 1s 1.5s step-end infinite;
     -moz-animation: type 1.3s steps(30, end),
@@ -28,12 +27,12 @@ p {
 
 @-webkit-keyframes type {
     from { width: 0 }
-    to { width:500px }
+    to { width:410px }
 }
 
 @-moz-keyframes type {
     from { width: 0 }
-    to { width:500px }
+    to { width:410px }
 }
 
 @-webkit-keyframes blink-caret {
