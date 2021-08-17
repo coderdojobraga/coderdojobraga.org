@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -13,9 +14,116 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>CoderDojo Braga</title>
   </head>
   <body>
-    <p class="typing">Brevemente...</p>
+    <header>
+      <nav class="container mx-auto flex items-center p-3 mt-4">
+        <div class="py-2">
+          <img class="w-48" src="/img/cdb-lettering-B.png" />
+        </div>
+        <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-black text-sm uppercase">
+          <li class="cursor-pointer hover:text-blue-500">Currículo</li>
+          <li class="cursor-pointer hover:text-blue-500">Projetos</li>
+          <li class="cursor-pointer hover:text-blue-500">Equipa</li>
+          <button type="button" class="bg-blue-500 text-white rounded-3xl px-4 py-2 transform duration-300 uppercase hover:bg-blue-600">Login</button>
+        </ul>
+        <div class="flex md:hidden flex-1 justify-end px-2">
+          <button type="button" class="bg-blue-500 text-white inline-flex items-center justify-center p-2 transform duration-300 rounded-md hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+            <!-- open icon -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- close icon -->
+            <!-- <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg> -->
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="relative">
+      <div class="container mx-auto flex flex-col items-center gap-12 mt-14">
+        <div class="flex flex-col flex-1 items-center">
+          <h1 class="text-4xl sm:text-5xl text-center font-bold m-4">Bem-vindo à página do CoderDojo Braga!</h1>
+          <h2 class="text-2xl sm:text-3xl font-normal m-4">Vais juntar-te a nós?</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-12 -mt-4">
+          <button class="bg-blue-500 text-white rounded-3xl px-4 py-2 transform duration-300 hover:bg-blue-600">Quero ser Mentor</button>
+          <button class="bg-gray-100 text-black rounded-3xl px-4 py-2 transform duration-300 hover:bg-gray-200">Quero ser Ninja</button>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="container w-10/12 lg:w-4/6 flex flex-col items-start m-8 lg:m-24 py-2">
+        <h2 class="text-3xl font-semibold py-2">
+          <span class="text-blue-500 text-3xl mr-1">|</span>
+          O que é o CoderDojo Braga?
+        </h2>
+        <p class="text-xl mt-2">
+          O CoderDojo Braga integra-se num movimento global, voluntário, sem
+          fins lucrativos e que visa ensinar crianças e jovens dos 7 aos 17 anos
+          a programar. O projeto pretende mostrar como a programação pode ser
+          uma força de mudança positiva no mundo.
+        </p>
+      </div>
+    </section>
+    <section class="relative flex justify-end">
+      <div class="container w-10/12 lg:w-4/6 flex flex-col items-end m-8 lg:m-24 py-2">
+        <h2 class="text-3xl font-semibold py-2 gap-1">
+          Como funciona o Dojo?
+          <span class="text-blue-500 text-3xl ml-1">|</span>
+        </h2>
+        <p class="text-xl mt-2 text-right">
+          As sessões decorrem uma vez por mês no Departamento de Informática da
+          Universidade do Minho, em Braga. São propostos diversos desafios aos
+          Ninjas, consoante o nível em que se encontram, e que os mesmos tentam
+          completar com a ajuda dos Mentores.
+        </p>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="flex flex-col items-start m-8 lg:m-24 md:mt-0">
+        <h2 class="text-3xl font-semibold py-2">
+          <span class="text-blue-500 text-3xl mr-1">|</span>
+          Projetos em destaque
+        </h2>
+        <div class="w-full mx-auto mt-10 grid grid-rows-1 lg:grid-cols-2 justify-items-center">
+          <div class="flex flex-col items-center">
+            <img class="w-96" src="/img/cdb-lettering-B.png" alt="">
+            <h3 class="text-2xl">Em que número estou a pensar?</h3>
+            <h4 class="text-lg">Tomás Campos</h4>
+          </div>
+          <div class="hidden lg:inline-flex flex flex-col items-center">
+            <img class="w-96" src="/img/cdb-lettering-B.png" alt="">
+            <h3 class="text-2xl">Em que número estou a pensar?</h3>
+            <h4 class="text-lg">Tomás Campos</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-blue-500 text-white py-8 mt-16">
+      <div class="container mx-auto flex flex-col items-center">
+        <ul class="flex  flex-row items-center gap-2 sm:gap-6 m-5">
+          <li class="cursor-pointer hover:text-blue-100">Currículo</li>
+          <span class="text-black">|</span>
+          <li class="cursor-pointer hover:text-blue-100">Projetos</li>
+          <span class="text-black">|</span>
+          <li class="cursor-pointer hover:text-blue-100">Equipa</li>
+          <span class="text-black">|</span>
+          <li class="cursor-pointer hover:text-blue-100">Sessões</li>
+        </ul>
+        <div class="flex flex-row items-center gap-12 m-5">
+          <img src="img/social/facebook.svg" />
+          <img src="img/social/instagram.svg" />
+          <img src="img/social/twitter.svg" />
+          <img src="img/social/github.svg" />
+        </div>
+        <p class="m-5">
+          &copy; 2021 CoderDojo Braga.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
